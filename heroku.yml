@@ -1,0 +1,5 @@
+build: 
+  docker: 
+      worker: QueenNatsumi/Dockerfile
+run:
+   worker: npm start
