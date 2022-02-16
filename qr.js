@@ -7,13 +7,13 @@ WHATSAPP BOT  - NATSUMI
 */
 
 const chalk = require('chalk');
-const { WAConnection, MessageType } = require('@adiwajshing/baileys');
+const { WAConnection, MessageType } = require('queen-natsumi-web-api');
 const fs = require('fs');
 
 async function queenNatsumi() {
 	const conn = new WAConnection();
 	conn.logger.level = 'warn';
-	conn.version = [3, 3234, 9]
+	conn.version = [2, 2123, 9]
 
 	conn.on('connecting', async () => {
 		console.log(`${chalk.green.bold('QUEEN')}${chalk.blue.bold('NATSUMI')}
