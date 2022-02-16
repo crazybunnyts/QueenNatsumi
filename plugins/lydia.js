@@ -9,7 +9,7 @@ WhatsAsena - Yusuf Usta
 /*
 const Asena = require('../events');
 const Config = require('../config');
-const {MessageType} = require('@adiwajshing/baileys');
+const {MessageType} = require('queen-natsumi-web-api');
 const {LydiaDB} = require('./sql/lydia');
 const {LydiaAI} = require('coffeehouse');
 

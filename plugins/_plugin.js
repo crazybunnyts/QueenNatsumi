@@ -9,7 +9,7 @@ QueenNatsumi - CyberDraxo
 const Natsumi = require('../events');
 const Heroku = require('heroku-client');
 const Config = require('../config');
-const {MessageType} = require('@adiwajshing/baileys');
+const {MessageType} = require('queen-natsumi-web-api');
 const got = require('got');
 const fs = require('fs');
 const Db = require('./sql/plugin');

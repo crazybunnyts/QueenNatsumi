@@ -12,7 +12,7 @@ Don't use it for illegal purposes.
 const thiccysapi = require('@phaticusthiccy/open-apis'); // Import NPM Package
 
 const Asena = require('../events');
-const {MessageType, GroupSettingChange, Mimetype, MessageOptions} = require('@adiwajshing/baileys');
+const {MessageType, GroupSettingChange, Mimetype, MessageOptions} = require('queen-natsumi-web-api');
 const fs = require('fs');
 const Config = require('../config')
 const axios = require('axios')

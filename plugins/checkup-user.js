@@ -1,5 +1,5 @@
 const Natsumi = require('../events');
-const {MessageType} = require('@adiwajshing/baileys');
+const {MessageType} = require('queen-natsumi-web-api');
 const Config = require('../config');
 
 

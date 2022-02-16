@@ -8,7 +8,7 @@ Natsumi - CyberDraxo
 
 const Natsumi = require('../events');
 const Config = require('../config');
-const {MessageType} = require('@adiwajshing/baileys');
+const {MessageType} = require('queen-natsumi-web-api');
 
 const Language = require('../language');
 const Lang = Language.getString('_natsumi');

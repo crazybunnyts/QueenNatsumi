@@ -7,7 +7,7 @@ Natsumi - Natsumi
 */
 
 const Natsumi = require('../events');
-const {MessageType} = require('@adiwajshing/baileys');
+const {MessageType} = require('queen-natsumi-web-api');
 const FilterDb = require('./sql/filters');
 const Config = require('../config')
 const Language = require('../language');

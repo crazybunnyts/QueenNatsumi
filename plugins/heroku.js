@@ -10,7 +10,7 @@ const Config = require('../config');
 const Heroku = require('heroku-client');
 const {secondsToHms} = require('./afk');
 const got = require('got');
-const {MessageType} = require('@adiwajshing/baileys');
+const {MessageType} = require('queen-natsumi-web-api');
 const sql = require('./sql/greetings');
 
 const Language = require('../language');

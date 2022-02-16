@@ -1,6 +1,6 @@
 /*
 const Asena = require('../events');
-const { MessageType } = require('@adiwajshing/baileys');
+const { MessageType } = require('queen-natsumi-web-api');
 const { similarity } = require('../similarity')
 const Language = require('../language');
 const Lang = Language.getString('aiscanner');

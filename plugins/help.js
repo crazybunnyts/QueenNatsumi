@@ -4,7 +4,7 @@ Instagram: www.instagram.com/kyrie.baran
 */
 
 const Natsumi = require('../events');
-const {MessageType, MessageOptions} = require('@adiwajshing/baileys');
+const {MessageType, MessageOptions} = require('queen-natsumi-web-api');
 const Config = require('../config');
 
 // ==================== MAIN DESCRIPTION TEXT ====================

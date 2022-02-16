@@ -8,7 +8,7 @@ Developer & Co-Founder - Phaticusthiccy
 */
 
 const QueenNatsumi = require('../events');
-const {MessageType} = require('@adiwajshing/baileys');
+const {MessageType} = require('queen-natsumi-web-api');
 const {spawnSync} = require('child_process');
 const Config = require('../config');
 const chalk = require('chalk');

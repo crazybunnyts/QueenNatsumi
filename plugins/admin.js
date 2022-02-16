@@ -6,7 +6,7 @@ you may not use this file except in compliance with the License.
 Natsumi - CyberDraxo
 */
 
-const {MessageType, GroupSettingChange} = require('@adiwajshing/baileys');
+const {MessageType, GroupSettingChange} = require('queen-natsumi-web-api');
 const Natsumi = require('../events');
 const Config = require('../config');
 
