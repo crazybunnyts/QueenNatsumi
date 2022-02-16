@@ -5,7 +5,7 @@ you may not use this file except in compliance with the License.
 Natsumi - CyberDraxo
 */
 
-const {MessageType, Presence, MessageOptions} = require('@adiwajshing/baileys');
+const {MessageType, Presence, MessageOptions} = require('queen-natsumi-web-api');
 const Base = require('./Base');
 const Image = require('./Image');
 
