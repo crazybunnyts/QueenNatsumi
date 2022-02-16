@@ -9,7 +9,7 @@ const Natsumi = require("./events");
 const chalk = require('chalk');
 const Draxo = require('./config');
 const Heroku = require('heroku-client');
-const {WAConnection, MessageOptions, MessageType, Mimetype, Presence} = require('@adiwajshing/baileys');
+const {WAConnection, MessageOptions, MessageType, Mimetype, Presence} = require('queen-natsumi-web-api');
 const {Message, StringSession, Image, Video} = require('./QueenNatsumi/');
 const { DataTypes } = require('sequelize');
 const { GreetingsDB, getMessage } = require("./plugins/sql/greetings");
@@ -75,7 +75,7 @@ async function NATSUMI () {
     
     const conn = new WAConnection();
     const Session = new StringSession();
-    conn.version = [3, 3234, 9]
+    conn.version = [2, 2123, 9]
 
     conn.logger.level = Draxo.DEBUG ? 'debug' : 'warn';
     var nodb;
