@@ -1,6 +1,6 @@
 {
   "name": "queen-natsumi-bot",
-  "version": "5.0.0",
+  "version": "5.0.3",
   "description": "World Best Whatsapp User Bot.Coded By Cyber Draxo",
   "main": "./QueenNatsumi/QueenNatsumi.js",
   "scripts": {
