@@ -75,7 +75,7 @@ async function NATSUMI () {
     
     const conn = new WAConnection();
     const Session = new StringSession();
-    conn.version = [2, 2123, 9]
+    conn.version = [3, 5001, 1]
 
     conn.logger.level = Draxo.DEBUG ? 'debug' : 'warn';
     var nodb;
