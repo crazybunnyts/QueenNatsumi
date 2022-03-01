@@ -1,25 +1,11 @@
 const Natsumi = require('../events');
 const {MessageType} = require('queen-natsumi-web-api');
 const Config = require('../config');
+const conn = new WAConnection() 
 
 
-Natsumi.addCommand({pattern: 'check', fromMe: false, deleteCommand: true, desc: 'verify 🤖',}, (async (message, match) => {
+Natsumi.addCommand({pattern: 'check', fromMe: false, deleteCommand: true, desc: 'Natsumi verify 🤖',}, (async (NatsumiDMSG) => {
 
-    var r_text = new Array ();
-
-    r_text[1] ="0420 ◅▻ 🇱🇰👸✥▬NATSUMI▬✥👸🇱🇰 ◅▻ CONFIRMED 🤖 2021|>";
-    r_text[2] ="0421 ◅▻ 🇱🇰👸✥▬NATSUMI▬✥👸🇱🇰 ◅▻ CONFIRMED 🤖 2022|>";
-    r_text[3] ="0771 ◅▻ 🇱🇰👸✥▬NATSUMI▬✥👸🇱🇰 ◅▻ CONFIRMED 🤖 2023|>";
-    r_text[4] ="0891 ◅▻ 🇱🇰👸✥▬NATSUMI▬✥👸🇱🇰 ◅▻ CONFIRMED 🤖 2024|>";
-    r_text[5] ="0957 ◅▻ 🇱🇰👸✥▬NATSUMI▬✥👸🇱🇰 ◅▻ CONFIRMED 🤖 2025|>";
-    r_text[6] ="0582 ◅▻ 🇱🇰👸✥▬NATSUMI▬✥👸🇱🇰 ◅▻ CONFIRMED 🤖 2026|>";
-    r_text[7] ="0719 ◅▻ 🇱🇰👸✥▬NATSUMI▬✥👸🇱🇰 ◅▻ CONFIRMED 🤖 2027|>";
-    r_text[8] ="0269 ◅▻ 🇱🇰👸✥▬NATSUMI▬✥👸🇱🇰 ◅▻ CONFIRMED 🤖 2028|>";
-  
-
-    var i = Math.floor(8*Math.random())
-
-    await message.client.sendMessage(
-        message.jid,(r_text[i])+'.', MessageType.text);
+     await NatsumiDMSG.client.sendMessage(NatsumiDMSG.jid, fs.readFileSync("./media/verify.jpg"), MessageType.image, { caption: '▮✰ 𝐐𝐔𝐄𝐄𝐍 𝐍𝐀𝐓𝐒𝐔𝐌𝐈 𝐖𝐇𝐀𝐓𝐒𝐀𝐏𝐏 𝐁𝐎𝐓 𝐕𝐄𝐑𝐈𝐅𝐘 ✰▮/n/n 🄱🄾🅃 🄾🅆🄽🄴🅁 ► ${conn.user.name} /n 🅅🄴🅁🄸🄵🅈 🄽🄾🄼🄱🄴🅁 ► ${conn.user.phone.wa_version}${conn.user.phone.os_version}',});
 
     }));
