@@ -4,7 +4,6 @@ Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
 
 WhatsAsena - Yusuf Usta
-*/
 
 const Asena = require('../events');
 const {MessageType} = require('queen-natsumi-web-api');
@@ -367,7 +366,7 @@ Asena.addCommand({pattern: '?(.*)', fromMe: true, deleteCommand: false, dontAddC
         
     }
 }));
-*/
+
 // https://github.com/ddsol/speedtest.net/blob/master/bin/index.js#L86
 function speedText(speed) {
     let bits = speed * 8;
@@ -395,7 +394,7 @@ Asena.addCommand({pattern: 'speedtest', fromMe: true, desc: Lang.SPEEDTEST_DESC}
     );
     await msg.delete();
 }));
-
+*/
 Asena.addCommand({pattern: 'ping$', fromMe: true, deleteCommand: false, desc: Lang.PING_DESC}, (async (message, match) => {
   var start = new Date().getTime();
   await message.sendMessage('```Ping!```');
